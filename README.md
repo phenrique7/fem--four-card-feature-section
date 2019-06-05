@@ -1,3 +1,3 @@
-# lab-brafe-1
+# lab-brafe
 
-A website for exercise css advanced position.
+Build of three websites for exercise css advanced position.
