@@ -221,6 +221,10 @@ h2.produtos-mineiro::before {
   margin-bottom: 40px;
 }
 
+.locais-item img {
+  margin: 0 auto;
+}
+
 .locais-item h2 {
   font-size: 2.25em;
   font-weight: bold;
