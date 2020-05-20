@@ -1,0 +1,40 @@
+@import 'height';
+@import 'width';
+@import 'margin';
+@import 'padding';
+@import 'z-index';
+@import 'font-size';
+@import 'opacity';
+@import 'text-color';
+@import 'font-weight';
+@import 'line-weight';
+@import 'letter-spacing';
+@import 'breakpoints';
+@import 'box-shadow';
+@import 'word-break';
+@import 'border-color';
+@import 'border-width';
+@import 'border-radius';
+@import 'background-color';
+@import 'placeholder-color';
+@import 'position-utilities';
+
+a:focus {
+  outline: none;
+  box-shadow: $shadow-outline;
+  border-radius: $rounded-sm;
+}
+
+@mixin container {
+  @include mx-auto;
+  @include px-4;
+  max-width: $max-w-screen-xl;
+
+  @include breakpoint(xl) {
+    max-width: $max-w-screen-lg;
+  }
+
+  @include breakpoint(lg) {
+    max-width: $max-w-screen-md;
+  }
+}

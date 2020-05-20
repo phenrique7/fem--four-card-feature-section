@@ -1,0 +1,29 @@
+{
+  "name": "fem-four_card_feature_section",
+  "version": "1.0.0",
+  "description": "Frontend Mentor | Four card feature section",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:js": "gulp watchJS",
+    "watch:sass": "gulp watchSass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phenrique7/fem-four_card_feature_section.git"
+  },
+  "keywords": [
+    "ui",
+    "design",
+    "frontend"
+  ],
+  "author": "Paulo Henrique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phenrique7/fem-four_card_feature_section/issues"
+  },
+  "homepage": "https://github.com/phenrique7/fem-four_card_feature_section#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
