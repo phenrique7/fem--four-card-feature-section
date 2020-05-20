@@ -8,6 +8,11 @@
     "watch:js": "gulp watchJS",
     "watch:sass": "gulp watchSass"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phenrique7/fem-four_card_feature_section.git"
@@ -24,6 +29,9 @@
   },
   "homepage": "https://github.com/phenrique7/fem-four_card_feature_section#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "gulp": "^4.0.2",
+    "husky": "^4.2.5"
   }
 }
