@@ -60,7 +60,6 @@ select {
 }
 
 body {
-  font-family: 'Ari', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
