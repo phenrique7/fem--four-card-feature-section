@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Four card feature section</title>
-</head>
-<body>
-  <h1>Reliable, efficient delivery <br><b>Powered by Technology</b></h1>
-  <div>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</div>
-  <div>
-    <h3>Supervisor</h3>
-    <div>Monitors activity to identify project roadblocks</div>
-    <img src="./images/icon-supervisor.svg" alt="Supervisor">
-  </div>
-  <div>
-    <h3>Team Builder</h3>
-    <div>Scans our talent network to create the optimal team for your project</div>
-    <img src="./images/icon-team-builder.svg" alt="Team Builder">
-  </div>
-  <div>
-    <h3>Karma</h3>
-    <div>Regularity evaluates our talent to ensure quality</div>
-    <img src="./images/icon-karma.svg" alt="Karma">
-  </div>
-  <div>
-    <h3>Calculator</h3>
-    <div>Uses data from past projects to provide better delivery estimates</div>
-    <img src="./images/icon-calculator.svg" alt="Calculator">
-  </div>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="description"
+      content="A nice layout-based challenge about feature section"
+    >
+    <meta name="keywords" content="HTML, CSS, SASS, SCSS">
+    <meta name="author" content="Paulo Henrique">
+    <meta property="og:type" content="website">
+    <meta
+      property="og:title"
+      content="Frontend Mentor | Four card feature section"
+    >
+    <meta
+      property="og:description"
+      content="A nice layout-based challenge about feature section"
+    >
+    <meta
+      property="og:url"
+      content="https://phenrique7.github.io/fem--four-card-feature-section"
+    >
+    <meta property="twitter:card" content="summary">
+    <meta
+      property="twitter:title"
+      content="Frontend Mentor | Four card feature section"
+    >
+    <meta property="twitter:creator" content="@__phenrique7">
+    <meta
+      property="twitter:description"
+      content="A nice layout-based challenge about feature section"
+    >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/dist/style.min.css">
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="presentation">
+        <h1 class="presentation__title">
+          Reliable, efficient delivery <br><b>Powered by Technology</b>
+        </h1>
+        <h2 class="presentation__subtitle">
+          Our Artificial Intelligence powered tools use millions of project
+          data points to ensure that your project is successful
+        </h2>
+      </div>
+      <div class="features row">
+        <div class="column-12 column-lg-4">
+          <div class="card-feature card-feature--supervisor">
+            <span class="card-feature__feature">Supervisor</span>
+            <div class="card-feature__text">
+              Monitors activity to identify project roadblocks
+            </div>
+            <img
+              class="card-feature__image"
+              src="./images/icon-supervisor.svg"
+              alt="Supervisor"
+           >
+          </div>
+        </div>
+        <div class="column-12 column-lg-4">
+          <div class="card-feature card-feature--team-builder">
+            <span class="card-feature__feature">Team Builder</span>
+            <div class="card-feature__text">
+              Scans our talent network to create the optimal team for your
+              project
+            </div>
+            <img
+              class="card-feature__image"
+              src="./images/icon-team-builder.svg"
+              alt="Team Builder"
+            >
+          </div>
+          <div class="card-feature card-feature--karma">
+            <span class="card-feature__feature">Karma</span>
+            <div class="card-feature__text">
+              Regularity evaluates our talent to ensure quality
+            </div>
+            <img
+              class="card-feature__image"
+              src="./images/icon-karma.svg"
+              alt="Karma"
+            >
+          </div>
+        </div>
+        <div class="column-12 column-lg-4">
+          <div class="card-feature card-feature--calculator">
+            <span class="card-feature__feature">Calculator</span>
+            <div class="card-feature__text">
+              Uses data from past projects to provide better delivery
+              estimates
+            </div>
+            <img
+              class="card-feature__image"
+              src="./images/icon-calculator.svg"
+              alt="Calculator"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
