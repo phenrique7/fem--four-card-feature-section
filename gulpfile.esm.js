@@ -26,9 +26,13 @@ export function buildCss() {
     .pipe(dest('./css/dist/'));
 }
 
-export function watchSass() {
-  watch('./css/scss/**/*.scss', function watch(cb) {
+export function watchCss() {
+  watch('./css/scss/**/*.scss', function runSassTask(cb) {
     buildSass();
+    cb();
+  });
+
+  watch('./css/*.css', function runCssTask(cb) {
     concatCss();
     cb();
   });
