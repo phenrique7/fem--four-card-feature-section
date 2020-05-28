@@ -1,12 +1,13 @@
 {
-  "name": "fem-four_card_feature_section",
+  "name": "fem--four-card-feature-section",
   "version": "1.0.0",
-  "description": "Frontend Mentor | Four card feature section",
-  "main": "index.js",
+  "description": "Solution for Frontend Mentor layout-based challenge of feature section",
+  "author": "Paulo Henrique",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "gulp buildCss",
-    "watch:sass": "gulp watchCss"
+    "gulp:build:css": "gulp buildCss",
+    "gulp:server": "gulp server"
   },
   "husky": {
     "hooks": {
@@ -15,23 +16,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phenrique7/fem-four_card_feature_section.git"
+    "url": "git+https://github.com/phenrique7/fem--four-card-feature-section.git"
   },
   "keywords": [
     "ui",
     "design",
     "frontend"
   ],
-  "author": "Paulo Henrique",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/phenrique7/fem-four_card_feature_section/issues"
+    "url": "https://github.com/phenrique7/fem--four-card-feature-section/issues"
   },
-  "homepage": "https://github.com/phenrique7/fem-four_card_feature_section#readme",
+  "homepage": "https://github.com/phenrique7/fem--four-card-feature-section#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@types/autoprefixer": "^9.7.2",
+    "@types/browser-sync": "^2.26.1",
     "@types/gulp": "^4.0.6",
     "@types/gulp-concat": "0.0.32",
     "@types/gulp-postcss": "^8.0.0",
@@ -39,6 +39,9 @@
     "@types/gulp-sass": "^4.0.0",
     "@types/node": "^14.0.4",
     "@types/node-sass": "^4.11.1",
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -49,8 +52,5 @@
     "node-sass": "^4.14.1",
     "prettier": "2.0.5"
   },
-  "dependencies": {
-    "autoprefixer": "^9.8.0",
-    "esm": "^3.2.25"
-  }
+  "dependencies": {}
 }

@@ -353,15 +353,22 @@
     flex-basis: 100%;
     max-width: 100%; } }
 
+html, body, main {
+  height: 100%; }
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   background: #fafafa; }
 
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0.75rem; }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  main .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0.75rem; }
 
 .presentation {
   margin: 2.5rem auto;
@@ -390,32 +397,43 @@ body {
   margin-top: -0.75rem; }
   .features > div:nth-child(2n + 1) {
     align-self: center; }
-  .features .card-feature {
-    background: #fff;
-    padding: 1.5rem;
-    width: 100%;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-radius: 0.28rem; }
-    .features .card-feature.card-feature--supervisor {
-      border-top: 4px solid #45d3d3; }
-    .features .card-feature.card-feature--team-builder {
-      border-top: 4px solid #ea5353;
-      margin-bottom: 1.5rem; }
-    .features .card-feature.card-feature--karma {
-      border-top: 4px solid #fcaf4a; }
-    .features .card-feature.card-feature--calculator {
-      border-top: 4px solid #549ef2; }
-    .features .card-feature .card-feature__feature {
-      color: #4c4e61;
-      font-size: 1.125rem;
-      line-height: 1;
-      font-weight: 600; }
-    .features .card-feature .card-feature__text {
-      margin-top: 0.75rem;
-      color: #a3a5ae;
-      font-size: 0.875rem;
-      font-weight: 400;
-      line-height: 1.5rem; }
-    .features .card-feature .card-feature__image {
-      margin-top: 2rem;
-      margin-left: auto; }
+
+.card-feature {
+  background: #fff;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.28rem; }
+  .card-feature.card-feature--supervisor {
+    border-top: 4px solid #45d3d3; }
+  .card-feature.card-feature--team-builder {
+    border-top: 4px solid #ea5353;
+    margin-bottom: 1.5rem; }
+  .card-feature.card-feature--karma {
+    border-top: 4px solid #fcaf4a; }
+  .card-feature.card-feature--calculator {
+    border-top: 4px solid #549ef2; }
+  .card-feature .card-feature__feature {
+    color: #4c4e61;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 600; }
+  .card-feature .card-feature__text {
+    margin-top: 0.75rem;
+    color: #a3a5ae;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem; }
+  .card-feature .card-feature__image {
+    margin-top: 2rem;
+    margin-left: auto; }
+
+footer {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem; }
+  footer .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #4c4e61; }
+    footer .attribution a {
+      color: #3e52a3; }

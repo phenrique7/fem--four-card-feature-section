@@ -5,34 +5,49 @@ import postcss from 'gulp-postcss';
 import sass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'autoprefixer';
+import browserSync from 'browser-sync';
+
+browserSync.create();
 
 function buildSass() {
-  return src('./css/scss/main.scss')
+  return src('./styles/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('./css'));
+    .pipe(dest('./styles'));
 }
 
 function concatCss() {
-  return src(['./css/reset.css', './css/main.css'])
+  return src(['./styles/reset.css', './styles/main.css'])
     .pipe(concat('style.css'))
     .pipe(postcss([autoprefixer()]))
-    .pipe(dest('./css/dist/'));
+    .pipe(dest('./assets/css/'))
+    .pipe(browserSync.stream());
 }
 
 export function buildCss() {
-  return src('./css/dist/style.css')
+  return src('./assets/css/style.css')
     .pipe(cleanCSS())
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(dest('./css/dist/'));
+    .pipe(dest('./assets/css/'));
 }
 
-export function watchCss() {
-  watch('./css/scss/**/*.scss', function runSassTask(cb) {
+export function server() {
+  browserSync.init({
+    server: {
+      baseDir: './',
+    }
+  });
+
+  watch('./index.html', function reloadBrowser(cb) {
+    browserSync.reload();
+    cb();
+  });
+
+  watch('./styles/scss/**/*.scss', function runSassTask(cb) {
     buildSass();
     cb();
   });
 
-  watch('./css/*.css', function runCssTask(cb) {
+  watch('./styles/*.css', function runCssTask(cb) {
     concatCss();
     cb();
   });
